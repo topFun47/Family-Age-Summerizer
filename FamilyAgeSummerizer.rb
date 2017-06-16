@@ -11,11 +11,13 @@ actions = ["Y" , "N"]
 print "Do you have any parents? (#{actions.join(', ')}) "
 answer = gets
 answer = answer.chomp
-
-if answer
+y = 1
+n = 2
+if y
   print "what are their ages "
   parents_ages = gets
   parents_ages = parents_ages.chomp
-else
+end
+if n
   puts "i'm sorry"
 end
